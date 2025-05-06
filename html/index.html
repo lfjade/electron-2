@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warcraft</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <img src = "./img/hd-world-of-warcraft-logo-transparent-background-701751694707576wmaz8dxvxe-removebg-preview.png" alt = "img-wow" id = "img-wow">
+    <h1>Por Eluna!</h1>
+    <div class = botoes>
+        <button id = "btn-sobre">Sobre</button>
+        <button id = "btn-ajuda">Ajuda</button>
+    </div>
+
+    <button onclick="window.close()">Fechar</button> <!-- Botão para fechar a janela -->
+    
+    <script>
+        document.getElementById('btn-sobre').addEventListener('click', () => {
+            window.api.abrirJanelaSobre()
+        })
+        document.getElementById('btn-ajuda').addEventListener('click', () => {
+            window.api.abrirJanelaAjuda()
+        })
+    </script>
+    
+</body>
+</html>
